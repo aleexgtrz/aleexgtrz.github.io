@@ -51,7 +51,7 @@ h1{
   .navbar-brand{
     display: none;
   }
-  body {
+  html {
     overflow-x: hidden;
   }
 }
