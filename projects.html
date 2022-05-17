@@ -11,7 +11,7 @@
     <!-- Font Awesome Icons --> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- CSS Stylesheet -->
-    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link href="css/projects.css" rel="stylesheet" type="text/css">
 </head>
 
 <body class = "d-flex flex-column min-vh-100">
@@ -26,24 +26,35 @@
 
     <div class="collapse navbar-collapse" id = "navbar">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./images/calculator.png">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./projects.html">Projects</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./images/calculator.png">Contact</a>
-            </li>
+          <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="./images/calculator.png">About</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="./projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="./images/calculator.png">Contact</a>
+          </li>
         </ul>
     </div>
 </nav>
+    
+<div class="projects" id = "projects">
+    <h3>Recent projects</h3>
 
-<h1>UNDER CONSTRUCTION</h1>
+    <div class="categories">
+      <li class="selected">Javascript</li>
+      <li>Java</li>
+      <li>Python</li>
+    </div>
 
+    <div class="row"></div>
+    
+</div>
+    
 <aside class="text-center fixed-bottom text-white" style = "background-color:  transparent">
     <!-- Section: Social media -->
     <section class="mb-4">
@@ -63,12 +74,13 @@
       ></a>
 
       <!-- Github -->
-      <a class="btn btn-floating m-1" href="https://github.com/aleexgtrz" role="button" target="_blank"
+      <a class="btn btn-floating m-1" href="#!" role="button"
         ><i class="fab fa-github"></i
       ></a>
     </section>
     <!-- Section: Social media -->
 </aside>
+
 
 <!-- Bootstrap core JavaScript -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -78,17 +90,6 @@
 <!-- Javascript -->
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
-
-<script>
-  $(document).ready(function() {
-      $("[href]").each(function() {
-          if (this.href == window.location.href) {
-              $(this).addClass("active");
-          }
-      });
-  });
-</script>
-
-
+<script src = "js/script.js" type = "text/javascript"></script>
 </body>
 </html>
