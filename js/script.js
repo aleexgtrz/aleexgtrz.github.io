@@ -21,21 +21,18 @@ const projects = [
 		url:'./images/memory.jpg',
 		category: 'Javascript',
         git: 'https://github.com/aleexgtrz/pokemon_memory_game',
-		live: 'https://magenta-sorbet-ef9877.netlify.app/',
         name: 'Pokémon Memory Game'
 	},
 	{
 		url:'./images/puzzle.png',
 		category: 'Javascript',
         git: '',
-		live: '',
         name: 'Puzzle Maker'
 	},
 	{
 		url:'./images/brick.jpg',
 		category: 'Javascript',
-        git: '',
-		live: '',
+        git: 'https://github.com/aleexgtrz/brick_pong',
         name: 'Brick Pong'
 	},
 ];
@@ -43,15 +40,10 @@ const projects = [
 const renderProjects = category => {
 	projects.forEach(project => {
 		if (project.category === category) {
-			let visible = "";
-			if(project.git == ""){
-				visible = "display: none;";
-			}
-
             $(".row").append(`
 				<div class='col-sm project' 
 				style = "background-image: url(${project.url});" 
-				onclick = 'window.open("${project.git})'>
+				onclick = 'window.open("${project.git}")'>
 				${project.name}
 				</div>
 			`)

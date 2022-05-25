@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-@keyframes example {
-  from {background-color: red;}
-  to {background-color: yellow;}
-}
-
 body{
     background-color: black;
     font-family: 'Press Start 2P';
@@ -17,7 +12,6 @@ body{
 
 #navbar{
     float: right;
-    background-color: black;
 }
 
 .nav-link{
@@ -78,10 +72,11 @@ body{
 .col-sm:hover{
     transform: scale(1.1, 1.1);
     transition: 1s;
-    cursor: pointer;
+    cursor: url('../images/git.svg'), auto;	
     color: black;
     background-color: rgba(255, 255, 255, 0.5);
     background-blend-mode: color-burn;
+
 }
 
 aside{
@@ -99,7 +94,8 @@ aside{
   justify-content: center;
 }
 .categories .selected {
-	background: purple;
+	background: rgb(211, 71, 253);
+  box-shadow: 0px 0px 20px 5px rgb(211, 71, 253);
 	padding: 5px 10px;
 	border-radius: 4px;
 	color: white;
