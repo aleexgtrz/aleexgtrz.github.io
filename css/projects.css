@@ -78,6 +78,7 @@ body{
 .col-sm:hover{
     transform: scale(1.1, 1.1);
     transition: 1s;
+    cursor: pointer;
     color: black;
     background-color: rgba(255, 255, 255, 0.5);
     background-blend-mode: color-burn;
@@ -92,7 +93,7 @@ aside{
 .categories {
   font-size: 10px;
 	list-style: none;
-	margin-bottom: 40px;
+	margin-bottom: 40px; 	margin-top: 40px;
 	display: flex;
 	align-items: center;
   justify-content: center;

@@ -13,6 +13,8 @@ const grid = document.querySelector('.row');
 const initialSelected = document.querySelector('.selected');
 let selectedCategory = initialSelected.innerText;
 
+
+
 // Projects
 const projects = [
 	{
@@ -25,37 +27,33 @@ const projects = [
 	{
 		url:'./images/puzzle.png',
 		category: 'Javascript',
-        git: 'https://github.com/aleexgtrz/pokemon_memory_game',
-		live: 'https://magenta-sorbet-ef9877.netlify.app/',
+        git: '',
+		live: '',
         name: 'Puzzle Maker'
 	},
 	{
-		url:'./images/calculator.png',
+		url:'./images/brick.jpg',
 		category: 'Javascript',
-        git: 'https://github.com/aleexgtrz/pokemon_memory_game',
-		live: 'https://magenta-sorbet-ef9877.netlify.app/',
-        name: 'Calculator'
-	},
-	{
-		url:'./images/game_of_life.jpg',
-		category: 'Java',
-        git: 'https://github.com/aleexgtrz/pokemon_memory_game',
-		live: 'https://magenta-sorbet-ef9877.netlify.app/',
-        name: 'Calculator'
+        git: '',
+		live: '',
+        name: 'Brick Pong'
 	},
 ];
 
 const renderProjects = category => {
 	projects.forEach(project => {
 		if (project.category === category) {
+			let visible = "";
+			if(project.git == ""){
+				visible = "display: none;";
+			}
+
             $(".row").append(`
-					<div class='col-sm' style = "background-image: url(${project.url});">
-						${project.name} <br>
-						<div style = "position: absolute; bottom: 20px;"> 
-							<button style = "border-radius: 10px" onclick = 'window.open("${project.live}")'>Live</button>
-							<button style = "border-radius: 10px" onclick = 'window.open("${project.git}")'>Git</button>
-						</div>
-					</div>
+				<div class='col-sm project' 
+				style = "background-image: url(${project.url});" 
+				onclick = 'window.open("${project.git})'>
+				${project.name}
+				</div>
 			`)
 		}
 	});
