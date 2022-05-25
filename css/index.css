@@ -35,14 +35,14 @@ h1{
    color: white; 
 }
 
-.projects{
-    color: white;
+@media (max-width: 992px){
+  
+  .col-md{
     position: absolute;
     top: 20%;
-    text-align: center;
-}
-
-@media (max-width: 992px){
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   .navbar-brand{
     display: none;
   }
