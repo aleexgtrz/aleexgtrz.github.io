@@ -10,9 +10,12 @@ body{
     overflow-x: hidden;;
 }
 
+nav{
+  background-color: black;
+}
+
 #navbar{
     float: right;
-    background-color: black;
 }
 
 h1{
