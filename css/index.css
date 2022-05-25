@@ -37,17 +37,21 @@ h1{
 
 @media (max-width: 992px){
   
-  .col-md{
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+  
   .navbar-brand{
     display: none;
   }
   html {
     overflow-x: hidden;
+  }
+}
+
+@media (max-width: 1600px){
+  .col-md{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
