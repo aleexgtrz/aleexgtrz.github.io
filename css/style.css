@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #1E1E1E;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.page {
+    height: 297mm;
+    width: 210mm;
+    margin: 10mm auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.page-container {
+    margin-top: 75px;
+    height: 100%;
+    width: 100%;
+}
+
+/* CSS for the Quill container and its elements */
+
+#page-1 {
+    font-size: 14px;
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+#page-1 p {
+    padding: 0;
+}
+
+#page-1 blockquote {
+    background-color: white;
+    border-left: 3px solid rgb(49, 49, 49);
+}
+
+#page-1 pre {
+    font-size: 13px !important;
+    background-color: #000000;
+    white-space: pre-wrap;
+    font-family: 'Inconsolata', monospace;
+}
+
+#page-1 h1 {
+    font-size: 24px;
+}
+
+#page-1 h2 {
+    font-size: 18px;
+}
+
+#page-1 .ql-editor {
+    height: 100%;
+    overflow: hidden;
+    margin: 25px 35px 25px 35px;
+}
+
+.ql-toolbar {
+    border: none !important;
+    position: fixed !important;
+    background-color: #2C2C2C;
+    z-index: 10;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.ql-toolbar .ql-stroke {
+    fill: none;
+    stroke: white !important;
+}
+
+.ql-toolbar .ql-fill {
+    fill: white !important;
+    stroke: none;
+}
+
+.ql-toolbar .ql-picker.ql-expanded .ql-picker-options {
+    background-color: #2C2C2C;
+    border: none;
+}
+
+.ql-toolbar .ql-picker.ql-expanded .ql-picker-options .ql-picker-item {
+    color: white;
+}
+
+.ql-toolbar .ql-picker.ql-expanded {
+    color: white;
+}
+
+.ql-toolbar .ql-picker{
+    color: white;
+    border: none !important;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: grey;
+    opacity: 1; /* Firefox */
+  }
+
+canvas {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    width: 1px;
+    height: 100%;
+}
+
+.color-btn {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.tools {
+    position: fixed;
+    left: 30px;
+    bottom: 10px;
+}
+
+.header {
+    border-bottom: 1px solid #707070;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    background-color: #2C2C2C;
+    z-index: 100;
+}
+
+.title {
+    all: unset;
+    height: 40px;
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+}
+
+.idkbtn {
+    position: relative;
+    top: 500px;
+    color: white;
+}
+
+img {
+    cursor: pointer;
+}
