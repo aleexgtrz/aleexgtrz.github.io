@@ -4,41 +4,88 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Denote</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/quill/1.3.7/quill.bubble.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/quill/1.3.7/quill.snow.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlightjs-themes@1.0.0/solarized_light.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/quill/1.3.7/quill.js"></script>
-  <script src="https://unpkg.com/paper"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <title>Alex Gutierrez</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
 </head>
 
 <body>
+  <div class="container">
+    <header>
+      <div class="social">
+        <a href="https://github.com/aleexgtrz" class = "fa fa-linkedin" target="_blank"></a>
+        <a href="https://www.linkedin.com/in/alexgtrz" class = "fa fa-github" target="_blank"></a>
+        <a href="./static/cv.pdf" target="_blank">CV</a>
+      </div>
+    </header>
 
-  <div class="header">
-    <input type="text" class="title" placeholder="Untitled"></input>
-  </div>
+    <div id="about">
+      <h2>About</h2>
+      <p>I'm a systems engineering student passionate about technology, gaming and business. Here you'll find
+        information about personal projects, gained skills and written articles. 
+        Feel free to explore and get in touch with me!
+      </p>
+    </div>
 
-  <div class="idkbtn">
-    <button class="save-btn">Save</button>
-    <button class="upload-btn">Upload</button>
-    <input type="file" id="upload-input" style="display:none"></input>
-    <button class="export-btn">Export</button>
-  </div>
+    <hr>
 
-  <div class="page-container">
-    <div class="page" id="page-1"></div>
-    <canvas id="canvas" resize></canvas>
-  </div>
+    <div id="recent-posts">
+      <h2>Featured</h2>
+      <div class="post" id="raspberry-bitcoin-miner">
+        <p class = "date">25/03/2024</p>
+        <h3>Mining Bitcoin with a Raspberry Pi</h3>
+        <p>Exploring the feasibility of using a Raspberry Pi 4B to mine Bitcoin or other cryptocurrencies. 
+         It covers the setup, configuration and considerations for running a Bitcoin mining operation on a low-cost
+         device.
+        </p>
+      </div>
+      <div class="post" id="raspberry-node">
+        <p class = "date">25/03/2024</p>
+        <h3>Running a Bitcoin Full Node on a Raspberry Pi</h3>
+        <p>Learning about the blockchain and it's participants called nodes. Discovering if running a full Bitcoin node
+          on a Raspberry Pi is feasible and how to do it.
+        </p>
+      </div>
+      <button class="btn-right">See more</button>
+    </div>
 
-  <div class="tools">
-    <input type="range" min="1" max="150" value="1" step="0.5" class="width-scrollbar">
-    <button class="eraser-btn"><i class="fas fa-eraser"></i></button>
-  </div>
+    <hr>
 
-  <script src="./js/text.js"></script>
+    <div id = "projects">
+      <h2>Projects</h2>
+      <div class = "project" id = "typely">
+        <img class = "project-image zoom" src = "./static/typely.png">
+        <h3>Typely</h3>
+        <p>
+          Text editor with a focus on productivity and minimalism. It features a clean interface, markdown support and 
+          a distraction-free mode. It's built with Electron and React. Includes an authentication system and local storage.
+        </p>
+        <button class="btn-left">Download</button>
+      </div>
+      <div class = "project" id = "digitfolio">
+        <img class = "project-image zoom" src = "./static/digitfolio.png">
+        <h3>Digitfolio</h3>
+        <p>
+          Cryptocurrency portfolio tracker. It allows users to track their investments in cryptocurrencies and get real-time
+          information about their value. It's built with React and Node.js. It uses the CoinGecko API for data.
+        </p>
+        <button class="btn-left">Download</button>
+      </div>
+      <div class = "project" id = "suika-game">
+        <img class = "project-image zoom" src = "./static/suika_game.jpeg">
+        <h3>3D Suika Game</h3>
+        <p>Made with Unreal Engine 5. 3D version of the popular japanese videogame "Suika Game".
+          A project where I practiced 3D modeling and game development with C++ and Blueprints.
+        </p>
+        <button class="btn-left">Download</button>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2024 Alex Gutierrez. All Rights Reserved.</p>
+    </footer>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
