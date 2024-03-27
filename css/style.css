@@ -35,12 +35,12 @@ a {
     text-decoration: none;
     cursor: pointer;
     font-weight: bold;
+    transition: all 0.5s;
 }
 
 a:hover {
-    color: rgb(156, 156, 156);
+    opacity: 0.6;
 }
-
 
 p {
     color: grey;
@@ -48,24 +48,24 @@ p {
 }
 
 hr {
-    border: 1px solid rgb(53, 53, 53);
+    border: 0.5px solid rgb(53, 53, 53);
 }
 
 #recent-posts {
-    margin-bottom: 50px;
+    margin-bottom: 75px;
 }
 
 .post {
-    padding: 10px;
-    border-radius: 5px;
-    border: 2px solid rgb(53, 53, 53);
+    padding: 20px;
+    border-radius: 10px;
     cursor: pointer;
     margin-bottom: 15px;
+    background-color: #0c0d0c;
     transition: all 0.5s;
 }
 
 .post:hover {
-    border: 2px solid rgb(156, 156, 156);
+    background-color: #1a1a1a;
 }
 
 .fa {
@@ -95,10 +95,22 @@ header {
     font-weight: bold;
 }
 
+.btn-category {
+    all: unset;
+    color:lightgrey;
+    cursor: pointer;
+    margin: 30px 10px 20px 0px;
+}
+
+.btn-menu {
+    all: unset;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+
 .project {
-    border-radius: 5px;
-    margin-bottom: 15px;
-    transition: all 0.5s;
     margin-bottom: 50px;
 }
 
@@ -109,9 +121,17 @@ header {
     background-attachment: fixed;
     background-position: center;
     border-radius: 5px;
-    cursor: pointer;
 }
 
 footer {
     text-align: center;
+}
+
+.category {
+    color: rgb(201, 201, 201);
+    font-size: 15px;
+    font-weight: 700;
+    margin-right: 5px;
+    display: inline-block;
+    margin: 0px 10px 0px 0px;
 }

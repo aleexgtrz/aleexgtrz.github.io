@@ -6,78 +6,69 @@
   <meta charset="UTF-8">
   <title>Alex Gutierrez</title>
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
   <div class="container">
     <header>
       <div class="social">
-        <a href="https://github.com/aleexgtrz" class = "fa fa-linkedin" target="_blank"></a>
-        <a href="https://www.linkedin.com/in/alexgtrz" class = "fa fa-github" target="_blank"></a>
+        <a href="https://github.com/aleexgtrz" class="fa fa-linkedin" target="_blank"></a>
+        <a href="https://www.linkedin.com/in/alexgtrz" class="fa fa-github" target="_blank"></a>
+        <a href="mailto:agutierrezcanuto@gmail.com" class="fa fa-envelope" target="_blank"></a>
         <a href="./static/cv.pdf" target="_blank">CV</a>
       </div>
     </header>
 
-    <div id="about">
-      <h2>About</h2>
-      <p>I'm a systems engineering student passionate about technology, gaming and business. Here you'll find
-        information about personal projects, gained skills and written articles. 
-        Feel free to explore and get in touch with me!
-      </p>
-    </div>
-
-    <hr>
-
     <div id="recent-posts">
       <h2>Featured</h2>
+
       <div class="post" id="raspberry-bitcoin-miner">
-        <p class = "date">25/03/2024</p>
         <h3>Mining Bitcoin with a Raspberry Pi</h3>
-        <p>Exploring the feasibility of using a Raspberry Pi 4B to mine Bitcoin or other cryptocurrencies. 
-         It covers the setup, configuration and considerations for running a Bitcoin mining operation on a low-cost
-         device.
+        <p>
+          Exploring the feasibility of using a Raspberry Pi 4B to mine Bitcoin or other cryptocurrencies. It covers the
+          setup, configuration and considerations for running a Bitcoin mining operation on a low-cost device.
         </p>
+        <p class="date category">25/03/2024</p>
+        <p class="category">#crypto</p>
+        <p class="category">#raspberrypi</p>
       </div>
-      <div class="post" id="raspberry-node">
-        <p class = "date">25/03/2024</p>
+
+      <div class="post" id="raspberry-bitcoin-node">
         <h3>Running a Bitcoin Full Node on a Raspberry Pi</h3>
-        <p>Learning about the blockchain and it's participants called nodes. Discovering if running a full Bitcoin node
+        <p>
+          Learning about the blockchain and it's participants called nodes. Discovering if running a full Bitcoin node
           on a Raspberry Pi is feasible and how to do it.
         </p>
+        <p class="date category">25/03/2024</p>
+        <p class="category">#crypto</p>
+        <p class="category">#raspberrypi</p>
       </div>
-      <button class="btn-right">See more</button>
+
+      <button class="btn-right"><a href="./articles.html">See more</a></button>
     </div>
 
-    <hr>
-
-    <div id = "projects">
+    <div id="projects">
       <h2>Projects</h2>
-      <div class = "project" id = "typely">
-        <img class = "project-image zoom" src = "./static/typely.png">
+      <div class="project" id="typely">
+        <img class="project-image" src="./static/typely.png">
         <h3>Typely</h3>
         <p>
-          Text editor with a focus on productivity and minimalism. It features a clean interface, markdown support and 
-          a distraction-free mode. It's built with Electron and React. Includes an authentication system and local storage.
+          Text editor with a focus on productivity and minimalism. It features a clean interface, markdown support and
+          a distraction-free mode. It's built with Electron and React. Includes an authentication system and local
+          storage.
         </p>
-        <button class="btn-left">Download</button>
+        <button class="btn-left"><a>Download</a></button>
       </div>
-      <div class = "project" id = "digitfolio">
-        <img class = "project-image zoom" src = "./static/digitfolio.png">
+      <div class="project" id="digitfolio">
+        <img class="project-image" src="./static/digitfolio.png">
         <h3>Digitfolio</h3>
         <p>
-          Cryptocurrency portfolio tracker. It allows users to track their investments in cryptocurrencies and get real-time
-          information about their value. It's built with React and Node.js. It uses the CoinGecko API for data.
+          Cryptocurrency portfolio tracker. It allows users to track their investments in cryptocurrencies and get
+          real-time information about their value. It's built with React and Node.js. It uses the CoinGecko API for
+          data.
         </p>
-        <button class="btn-left">Download</button>
-      </div>
-      <div class = "project" id = "suika-game">
-        <img class = "project-image zoom" src = "./static/suika_game.jpeg">
-        <h3>3D Suika Game</h3>
-        <p>Made with Unreal Engine 5. 3D version of the popular japanese videogame "Suika Game".
-          A project where I practiced 3D modeling and game development with C++ and Blueprints.
-        </p>
-        <button class="btn-left">Download</button>
+        <button class="btn-left"><a>Download</a></button>
       </div>
     </div>
 
@@ -87,5 +78,4 @@
 
     <script src="./js/main.js"></script>
 </body>
-
 </html>
