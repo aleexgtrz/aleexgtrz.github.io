@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/x-icon" href="./static/favicon.ico">
+  <script src="./js/carousel.js" defer></script>
 </head>
 
 <body>
@@ -43,7 +44,18 @@
         <h2>Projects</h2>
         <article class="project" id="quicklazy">
           <div class="project-image-bg">
-            <img class="project-image" src="./static/quicklazy.png" alt="Quicklazy - AI Shopping Assistant">
+            <div class="carousel-container">
+              <div class="carousel-slides">
+                <img class="project-image active" src="./static/quicklazy.png" alt="Quicklazy - AI Shopping Assistant">
+                <img class="project-image" src="./static/quicklazy-2.png" alt="Quicklazy - Additional View">
+              </div>
+              <button class="carousel-btn prev" onclick="changeSlide(-1)">❮</button>
+              <button class="carousel-btn next" onclick="changeSlide(1)">❯</button>
+              <div class="carousel-dots">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+              </div>
+            </div>
             <h3>Quicklazy</h3>
             <p>
               Your personal AI shopping assistant, designed to simplify your online shopping experience. 
