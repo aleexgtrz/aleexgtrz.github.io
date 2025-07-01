@@ -38,9 +38,19 @@ a {
     transition: all 0.5s;
 }
 
+.post a {
+    font-weight: normal;
+}
+
+.post a h3 {
+    font-weight: bold;
+}
+
 p {
-    color: grey;
-    font-size: 16px;
+    color: #888;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 10px 0;
 }
 
 hr {
@@ -161,7 +171,7 @@ footer {
     color: #888;
     font-size: 14px;
     margin: 0;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 .domain-card {
@@ -178,23 +188,27 @@ footer {
     text-align: left;
 }
 
-.domain-card a {
+.domain-name {
     color: white;
-    text-decoration: none;
     font-weight: bold;
-    transition: opacity 0.5s;
+    font-size: 16px;
+    margin: 0 0 10px 0;
 }
 
 /* Remove previous domain-list styles if present */
-.domain-list, .domain-list li, .domain-list a {
+.domain-list, .domain-list li {
+    all: unset;
+}
+
+.domain-list a:not(.btn-buy) {
     all: unset;
 }
 
 .btn-buy {
-    all: unset;
     display: inline-block;
     background: #1db954;
     color: white;
+    border: none;
     border-radius: 6px;
     padding: 6px 18px;
     margin-left: auto;
@@ -202,10 +216,6 @@ footer {
     font-size: 15px;
     cursor: pointer;
     transition: background 0.3s, opacity 0.3s;
-}
-
-.btn-buy a {
-    color: white;
     text-decoration: none;
 }
 
@@ -235,13 +245,13 @@ footer {
     letter-spacing: 0.5px;
 }
 
-.domain-card.featured .domain-info a {
-    font-size: 22px;
+.domain-card.featured .domain-name {
+    font-size: 18px;
     color: #1db954;
 }
 
 .domain-card.featured .domain-description {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.5;
     margin-top: 10px;
 }
