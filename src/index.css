@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-neutral-500: #737373;
+  --color-neutral-600: #525252;
+  --color-neutral-700: #404040;
+  --color-neutral-800: #262626;
+  --color-neutral-900: #171717;
+}
+
+@layer base {
+  body {
+    @apply bg-black text-white antialiased selection:bg-white selection:text-black;
+  }
+}
+
+.theme-border {
+  @apply border-neutral-900;
+}
+
+.theme-border-hover {
+  @apply group-hover:border-neutral-700;
+}
+
+.nav-link-elegant {
+  @apply text-sm uppercase tracking-widest text-white hover:text-neutral-400 transition-colors duration-300;
+}
+
+.lang-switch {
+  @apply flex gap-2 border border-neutral-800 px-3 py-1 rounded-full text-[10px] uppercase font-medium;
+}

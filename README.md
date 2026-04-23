@@ -1,1 +1,0 @@
-# aleexgtrz.github.io
